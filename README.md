@@ -1,68 +1,42 @@
-## Módulo 2 - App de Clima
-MVP del Clima - HTML, CSS, JS
-
-Aplicación web que muestra información meteorológica de varias localidades, incluyendo temperatura, humedad, viento y un pronóstico semanal.
-Construida con HTML, Bootstrap 5, JavaScript y datos simulados.
-
-Características
-
-Página principal con lista de localidades
-
-Página de detalles con:
-Temperatura
-Humedad
-Velocidad del viento
-Pronóstico para la semana
-Página "Acerca de" del proyecto
-Navegación entre páginas
-Diseño responsivo con Bootstrap
-Datos mockeados con JavaScript
-
-Tecnologías utilizadas
-HTML5
-CSS3 / Bootstrap 5
-JavaScript
-JSON
-
-📁 Estructura del proyecto
-Ejercicio Práctico - Desarrollo Portafolio Módulo 2
-assets/js
-- detalle.js
-- index.js
-acercade.html
-detalle.html
-index.html
-README.md
-
-
-Enlace
-https://github.com/abomdevp/weather-frontend-m2
-
-Cómo ejecutar el proyecto
-
-Descargar el repositorio
-Abre la carpeta con cualquier editor (VSCode recomendado)
-Abre index.html en tu navegador
-# weather-frontend-m2
-
 ## Módulo 3 - App de Clima
 
-### Tecnologías
-- HTML5
-- Bootstrap 5
-- SASS
-- JavaScript
+## 📌 Descripción del proyecto
 
-### Metodología CSS
-- BEM para nombrado
-- SASS modular con parciales
-- Variables y mixins reutilizables
+Esta App de Clima es una aplicación web frontend desarrollada como práctica académica.  
+La aplicación muestra el estado actual del clima en distintas **localidades de Chile**, presentadas mediante cards informativas que incluyen temperatura, estado del clima e ícono representativo.  
 
-### Estructura
-- Home: cards con clima actual
-- Detalle: información extendida
-- Diseño responsive mobile-first
+Además, permite acceder a una **vista de detalle** por localidad, donde se muestra información ampliada y un pronóstico semanal simulado.  
+La temática está orientada a lugares urbanos y ciudades principales del país.
 
+---
+
+## 🎯 Objetivo del módulo
+
+El objetivo de esta iteración (Módulo 3) es **refactorizar la interfaz visual** de la aplicación, mejorando la organización de estilos, el layout y la mantenibilidad del CSS, sin agregar nuevas funcionalidades complejas de JavaScript.
+
+---
+
+## 🎨 Metodología de estilos
+
+Para la organización del CSS se utilizó la metodología **BEM (Block, Element, Modifier)**, permitiendo:
+
+- Nombres de clases claros y predecibles  
+- Separación entre bloques, elementos y modificadores  
+- Estilos escalables y fáciles de mantener  
+
+Ejemplos de clases utilizadas:
+- `.weather-app`
+- `.place-card`
+- `.place-card__name`
+- `.place-card--sunny`
+
+---
+
+## 🧩 Estructura SASS
+
+Los estilos fueron desarrollados utilizando **SASS**, organizados en parciales para mejorar la modularidad y reutilización del código.
+
+https://github.com/abomdevp/weather-frontend-m3
 
 Francisco - Proyecto de práctica Frontend.
 # weather-frontend-m3
