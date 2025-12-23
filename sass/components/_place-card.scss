@@ -1,0 +1,26 @@
+.place-card {
+  @include card-base;
+  cursor: pointer;
+  transition: transform .2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  &__icon {
+    font-size: 2.5rem;
+  }
+
+  &__name {
+    font-weight: 600;
+    margin-top: $spacing-sm;
+  }
+
+  &__temp {
+    color: $color-primary;
+    font-size: 1.1rem;
+  }
+
+  &--sunny { border-top: 4px solid #ffc107; }
+  &--rainy { border-top: 4px solid #0dcaf0; }
+}

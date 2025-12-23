@@ -1,0 +1,9 @@
+.weather-app {
+  font-family: $font-base;
+  background-color: $color-bg;
+  min-height: 100vh;
+
+  &__content {
+    padding: $spacing-lg 0;
+  }
+}
