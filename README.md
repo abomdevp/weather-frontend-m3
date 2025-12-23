@@ -42,7 +42,26 @@ Cómo ejecutar el proyecto
 Descargar el repositorio
 Abre la carpeta con cualquier editor (VSCode recomendado)
 Abre index.html en tu navegador
+# weather-frontend-m2
 
-Francisco — Proyecto de práctica Frontend.
-# weather-frontend-m3
+## Módulo 3 – App de Clima
+
+### Tecnologías
+- HTML5
+- Bootstrap 5
+- SASS
+- JavaScript
+
+### Metodología CSS
+- BEM para nombrado
+- SASS modular con parciales
+- Variables y mixins reutilizables
+
+### Estructura
+- Home: cards con clima actual
+- Detalle: información extendida
+- Diseño responsive mobile-first
+
+
+Francisco - Proyecto de práctica Frontend.
 # weather-frontend-m3
