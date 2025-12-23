@@ -1,3 +1,4 @@
+## Módulo 2 - App de Clima
 MVP del Clima - HTML, CSS, JS
 
 Aplicación web que muestra información meteorológica de varias localidades, incluyendo temperatura, humedad, viento y un pronóstico semanal.
@@ -44,7 +45,7 @@ Abre la carpeta con cualquier editor (VSCode recomendado)
 Abre index.html en tu navegador
 # weather-frontend-m2
 
-## Módulo 3 – App de Clima
+## Módulo 3 - App de Clima
 
 ### Tecnologías
 - HTML5

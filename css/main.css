@@ -7,6 +7,12 @@
   padding: 2rem 0;
 }
 
+.weather-app__intro {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #000000;
+}
+
 .weather-footer {
   background: #fff;
   padding: 1rem;
