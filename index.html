@@ -6,63 +6,70 @@
     <title>Tiempo - Inicio</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="weather-app">
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Tiempo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="detalle.html">Detalle</a></li>
-                    <li class="nav-item"><a class="nav-link" href="acercade.html">Acerca De</a></li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Tiempo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="detalle.html">Detalle</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acercade.html">Acerca De</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5 weather-app__content">
+        <section class="weather-app__intro text-center mb-5">
+            <p class="lead">
+                Consulta el estado del clima en distintas localidades de Chile con datos en tiempo real.
+            </p>
+        </section>
+
+        <h1 class="text-center mb-4">Localidades de CHILE</h1>
+
+        <section class="mb-5">
+            <h3>Descripción</h3>
+            <p>
+                Este proyecto utiliza la **API de Open-Meteo** para obtener información meteorológica precisa. 
+                Selecciona una localidad para ver su pronóstico y estadísticas detalladas.
+            </p>
+        </section>
+
+        <div class="row" id="cardContainer">
+            <div class="text-center">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Cargando...</span>
+                </div>
+                <p>Obteniendo datos del clima...</p>
             </div>
         </div>
-    </nav>
-</header>
+    </main>
 
-<main class="container my-5 weather-app__content">
-
-<section class="weather-app__intro text-center mb-5">
-  <p class="lead">
-    Consulta el estado del clima en distintas localidades de Chile.
-  </p>
-</section>
-
-    <h1 class="text-center mb-4">Localidades de CHILE</h1>
-
-    <section class="mb-5">
-        <h3>Descripción</h3>
-        <p>
-            Este es un proyecto mínimo viable (MVP) desarrollado como práctica de frontend.
-            Muestra el estado del clima en diversas localidades y permite acceder al detalle
-            con un pronóstico semanal.
-            <strong>Selecciona una Localidad.</strong>
-        </p>
-    </section>
-
-    <div class="row" id="cardContainer">
-        <!-- Cards desde JS -->
-    </div>
-</main>
-
-<footer class="weather-footer mt-5">
-    <p class="mb-0">Proyecto de Francisco González - 2025</p>
-</footer>
+    <footer class="weather-footer mt-5">
+        <p class="mb-0">Proyecto de Francisco González - 2025</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script src="assets/js/data.js"></script>
-    <script src="assets/js/index.js"></script>
 
+    <script src="assets/js/weather.js"></script>
+    
+    <script>
+        // Inicialización de la clase una vez cargado el DOM
+        document.addEventListener("DOMContentLoaded", () => {
+            const app = new WeatherApp();
+            app.cargarHome("cardContainer");
+        });
+    </script>
 </body>
 </html>

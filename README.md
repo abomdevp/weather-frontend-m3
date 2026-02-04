@@ -1,42 +1,34 @@
-# App de Clima – Módulo 4
+# App de Clima – Módulo 5 (Final)
 
 ## Descripción
-Aplicación web de clima desarrollada para el **Módulo 4**, enfocada en la lógica y el manejo de datos con **JavaScript**.  
-La app muestra información del clima en distintas localidades de Chile y permite ver el detalle de cada una con su pronóstico semanal.
+Evolución de la aplicación de clima desarrollada originalmente en el Módulo 4. En esta iteración, se ha reestructurado completamente la lógica bajo el paradigma de **Programación Orientada a Objetos (POO)** y se ha implementado el consumo de datos reales mediante una **API externa** de forma asíncrona.
 
 ---
 
-## Modelado de datos
-Los datos del clima están definidos en JavaScript mediante un **arreglo de objetos** (`lugares`).  
-Cada localidad incluye:
-- id, nombre, temperatura y estado actual.
-- un arreglo `pronosticoSemanal` con día, temperatura mínima, máxima y estado.
+## Arquitectura y Lógica (POO)
+La aplicación está organizada mediante clases para garantizar un código modular y escalable:
+- **WeatherApp**: Clase principal que gestiona la lógica de negocio, los lugares y la coordinación de la interfaz.
+- **WeatherService / ApiClient**: Encargado exclusivamente de las peticiones `fetch` a la API de clima (Open-Meteo).
+- **Módulos Lógicos**: Separación de responsabilidades para el renderizado del DOM, cálculo de estadísticas y gestión de errores.
 
 ---
 
-## Funcionalidades
-- Vista Home con al menos 5 localidades y su clima actual.
-- Vista Detalle con pronóstico semanal dinámico.
-- Cálculo de estadísticas semanales en JavaScript:
-  - temperatura mínima, máxima y promedio.
-  - conteo de días por tipo de clima.
-  - resumen textual automático de la semana.
+## Nuevas Funcionalidades (Módulo 5)
+- **Consumo de API Real**: La información ya no es estática; se obtiene en tiempo real utilizando `async/await` y promesas.
+- **Alertas de Clima**: Implementación de reglas de negocio que generan avisos automáticos (ej. "Alerta de Calor" si el promedio supera los 25°C o "Semana Lluviosa").
+- **Estadísticas Dinámicas**: Cálculos de temperatura mínima, máxima y promedio generados a partir de los datos frescos de la API.
+- **Manejo de Errores**: Interfaz resiliente que informa al usuario en caso de fallos en la conexión o en la respuesta del servidor.
 
 ---
 
-## Tecnologías
-- HTML
-- CSS
-- SASS
-- JavaScript
-- Bootstrap
+## Tecnologías y Estándares (ES6+)
+- **JavaScript Moderno**: Uso extensivo de `let/const`, `arrow functions`, `template literals` y desestructuración.
+- **Programación Asíncrona**: Uso de la Fetch API para solicitudes HTTP.
+- **HTML5 & CSS3/SASS**: Estructura semántica y estilos avanzados.
+- **Bootstrap 5**: Componentes dinámicos y diseño responsivo (Mobile First).
 
 ---
 
 ## Autor
-Francisco González – 2025
-
-https://github.com/abomdevp/weather-frontend-m3
-
-Francisco - Proyecto de práctica Frontend.
-# weather-frontend-m4
+**Francisco González – 2025** [Repositorio del Proyecto](https://github.com/abomdevp/weather-frontend-m3)  
+*Proyecto de práctica Frontend enfocado en lógica avanzada y consumo de servicios externos.*
